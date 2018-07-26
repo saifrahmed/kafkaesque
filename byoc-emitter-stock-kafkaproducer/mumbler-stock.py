@@ -38,7 +38,7 @@ def main():
 	logging.basicConfig(format='%(asctime)s  %(levelname)s:%(message)s', level=logging.INFO)
 	logging.info("Writing to topic %s " % KAFKA_TOPIC)
 
-	producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
+	producer = KafkaProducer(bootstrap_servers=['localhost:8082'])
 
 	tick_id=100000
 	while True:
